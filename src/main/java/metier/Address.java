@@ -4,8 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
 
-public class Address extends Person{
+@Entity("address")
+public class Address{
+	@Id
+	private ObjectId id;
 	
 	private String street;
 	private String city;
@@ -14,8 +19,8 @@ public class Address extends Person{
 	
 	public Address() {}
 	
-	public Address(ObjectId id, String name, String street, String city, String postCode, String country) {
-		super(id, name);
+	public Address(ObjectId id,String street, String city, String postCode, String country) {
+		this.id=id;
 		this.street = street;
 		this.city = city;
 		this.postCode = postCode;
