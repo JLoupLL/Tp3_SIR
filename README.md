@@ -14,7 +14,8 @@
 <h2> Quelles sont les types de données stockés dans Redis </h2>
 <p> String, Listes, Hash, Sets, Sets triés </p>
 
-<h1> REVOIR CETTE QUESTION </h1>
 <h2> Que peut on faire comme types de requêtes ? </h2>
-<p> Avec un peu d'astuce, d'habitude et de dénormalisation de vos données, on arrive très vite à nos fins en demandant "la bonne clef"</p>
+<p> on ne peut pas requêter les valeurs comme on le fait habituellement avec un WHERE en MySQL. Il faut réaliser des requêtes avec les clefs"</p> 
+
+<p> source: http://www.barreverte.fr/une-courte-introduction-a-redis/ </p>
 
